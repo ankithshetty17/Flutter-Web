@@ -8,6 +8,7 @@ Color kBlack = Colors.black;
 Color kGradient1 = Colors.purple;
 Color kGradient2 = Colors.pinkAccent;
 Color Kbg = Color.fromARGB(255, 245, 241, 241);
+Color shadow = Color.fromARGB(255, 230, 224, 224);
 
 TextStyle kTitleText = GoogleFonts.poppins(
   color: Colors.black,

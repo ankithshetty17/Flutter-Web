@@ -11,3 +11,7 @@ String experience = 'Ganglia Technologies, Manipal (Aug 2023 - May 2024)\n'
     '\t\t- Developed and maintained attendance management and script evaluation applications using Flutter.\n'
     '\t\t- Implemented intuitive user interfaces and efficient data management functionalities.\n'
     '\t\t- Collaborated with team members to ensure seamless integration with back-end services.';
+String location = 'Banglore, India';
+String phno = '8150889654';
+String gitHub = 'www.github.com';
+String gitHubUrl = 'https://github.com/ankithshetty17';
