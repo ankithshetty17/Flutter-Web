@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/data/data.dart';
 import 'package:portfolio/utils/extensions.dart';
@@ -23,15 +23,12 @@ class SocialsButtons extends StatelessWidget {
                       },
                       style: ElevatedButton.styleFrom(
                           minimumSize: const Size(10, 20),
-                          backgroundColor: kPrimaryColor,
+                         backgroundColor: kWhite,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(5),
                           ),
                           padding: const EdgeInsets.all(12)),
-                      child: const FaIcon(
-                        FontAwesomeIcons.instagram,
-                        size: 14,
-                      )),
+                     child:SvgPicture.asset('assets/instagram.svg'),),
                   const SizedBox(
                     width: 10,
                   ),
@@ -42,15 +39,12 @@ class SocialsButtons extends StatelessWidget {
                       },
                       style: ElevatedButton.styleFrom(
                           minimumSize: const Size(10, 20),
-                          backgroundColor: kPrimaryColor,
+                          backgroundColor: kWhite,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(5),
                           ),
                           padding: const EdgeInsets.all(12)),
-                      child: const FaIcon(
-                        FontAwesomeIcons.linkedin,
-                        size: 14,
-                      )),
+                       child:SvgPicture.asset('assets/linkedin.svg'),),
                   const SizedBox(
                     width: 10,
                   ),
@@ -61,18 +55,15 @@ class SocialsButtons extends StatelessWidget {
                       },
                       style: ElevatedButton.styleFrom(
                           minimumSize: const Size(10, 20),
-                          backgroundColor: kPrimaryColor,
+                         backgroundColor: kWhite,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(5),
                           ),
                           padding: const EdgeInsets.all(12)),
-                      child: const FaIcon(
-                        FontAwesomeIcons.github,
-                        size: 14,
-                      ))
+                      child:SvgPicture.asset('assets/github.svg'),)
                 ],
               )
-            : Column(
+            : Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ElevatedButton(
@@ -82,17 +73,14 @@ class SocialsButtons extends StatelessWidget {
                       },
                       style: ElevatedButton.styleFrom(
                           minimumSize: const Size(10, 20),
-                          backgroundColor: kPrimaryColor,
+                          backgroundColor: kWhite,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(5),
                           ),
                           padding: const EdgeInsets.all(12)),
-                      child: const FaIcon(
-                        FontAwesomeIcons.instagram,
-                        size: 14,
-                      )),
+                      child:SvgPicture.asset('assets/instagram.svg'),),
                   const SizedBox(
-                    height: 10,
+                    width: 10,
                   ),
                   ElevatedButton(
                       onPressed: () async {
@@ -101,17 +89,14 @@ class SocialsButtons extends StatelessWidget {
                       },
                       style: ElevatedButton.styleFrom(
                           minimumSize: const Size(10, 20),
-                          backgroundColor: kPrimaryColor,
+                          backgroundColor: kWhite,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(5),
                           ),
                           padding: const EdgeInsets.all(12)),
-                      child: const FaIcon(
-                        FontAwesomeIcons.linkedin,
-                        size: 14,
-                      )),
+                       child:SvgPicture.asset('assets/linkedin.svg'),),
                   const SizedBox(
-                    height: 10,
+                    width: 10,
                   ),
                   ElevatedButton(
                       onPressed: () async {
@@ -120,15 +105,13 @@ class SocialsButtons extends StatelessWidget {
                       },
                       style: ElevatedButton.styleFrom(
                           minimumSize: const Size(10, 20),
-                          backgroundColor: kPrimaryColor,
+                          backgroundColor: kWhite,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(5),
                           ),
                           padding: const EdgeInsets.all(12)),
-                      child: const FaIcon(
-                        FontAwesomeIcons.github,
-                        size: 14,
-                      ))
+                      child:SvgPicture.asset('assets/github.svg'),
+                  ),
                 ],
               ));
   }

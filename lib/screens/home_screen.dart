@@ -129,11 +129,12 @@ class HomeScreen extends StatelessWidget {
               child: SizedBox(
                   width: context.screenConstraint().width * 0.8,
                   child: GridView.builder(
+                      physics: NeverScrollableScrollPhysics(),
                       shrinkWrap: true,
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount:  context.screenConstraint().width > 1000 ?2 :1,
                           childAspectRatio: 
-                          context.screenConstraint().width > 1200  ? 4 : 
+                          context.screenConstraint().width > 1200  ? 3 : 
                           context.screenConstraint().width > 900 ? 3:
                           context.screenConstraint().width > 650 ? 4:
                            context.screenConstraint().width > 520 ? 3:
