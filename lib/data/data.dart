@@ -1,5 +1,7 @@
 
 
+import 'package:portfolio/model/project_model.dart';
+
 String imagepath = 'assets/ankith.jpg';
 String name = 'Ankith Shetty';
 String email = 'ankishetty2002@gmail.com';
@@ -15,3 +17,39 @@ String location = 'Banglore, India';
 String phno = '8150889654';
 String gitHub = 'www.github.com';
 String gitHubUrl = 'https://github.com/ankithshetty17';
+String instagram = 'https://www.instagram.com/aankii_th/';
+String linkedIn = 'https://www.linkedin.com/in/ankith-shetty-1babb924b/';
+
+
+List<Project> projectList = [
+  Project(
+    name: 'Attendance Management System',
+    description: 'A Flutter app for managing attendance of students',
+    link: 'https://github.com/ankithshetty17/Clockin.git',
+  ),
+   Project(
+    name: 'News-Feed App',
+    description: 'A Flutter app for viewing top news headlines using NewsAPI.',
+    link: 'https://github.com/ankithshetty17/News-Feed.git',
+  ),
+   Project(
+    name: 'Spotify-UI',
+    description: 'A Flutter app replicating Spotify’s user interface.',
+    link: 'https://github.com/ankithshetty17/Spotify-UI.git',
+  ),
+   Project(
+    name: 'Portfolio',
+    description: 'A Flutter-based template for portfolio',
+    link: 'https://github.com/ankithshetty17/Flutter-Web.git',
+  ),
+   Project(
+    name: 'Blog-app',
+    description:'A Flutter app for creating and managing blogs',
+    link: 'https://github.com/ankithshetty17/Flutter-Blog.git',
+  ),
+   Project(
+    name: 'E-commerce',
+    description: 'A Flutter app template for showcasing e-commerce features.',
+    link: 'https://github.com/ankithshetty17/E-Commerce.git',
+  ),
+];

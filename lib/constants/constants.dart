@@ -33,3 +33,22 @@ TextStyle kButtonText = GoogleFonts.montserrat(
   fontWeight: FontWeight.bold,
   fontSize: 12.0,
 );
+
+
+TextStyle kMobileSubTitleText = GoogleFonts.montserrat(
+  color: kPrimaryColor,
+  fontWeight: FontWeight.bold,
+  fontSize: 10.0,
+);
+
+TextStyle kMobileSectionTitleText = GoogleFonts.montserrat(
+  color: kPrimaryColor,
+  fontWeight: FontWeight.bold,
+  fontSize: 12.0,
+);
+
+TextStyle kMobileButtonText = GoogleFonts.montserrat(
+  color: kWhite,
+  fontWeight: FontWeight.bold,
+  fontSize: 10.0,
+);

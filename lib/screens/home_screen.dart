@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/data/data.dart';
-import 'package:portfolio/screens/components/about_me.dart';
+import 'package:portfolio/screens/widgets/about_me.dart';
+import 'package:portfolio/screens/widgets/project_screen.dart';
+import 'package:portfolio/screens/widgets/socials.dart';
 import 'package:portfolio/utils/extensions.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -121,7 +123,31 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
             const SizedBox(height: 20),
-            const AboutMe()
+            const AboutMe(),
+              const SizedBox(height: 20),
+              Center(
+              child: SizedBox(
+                  width: context.screenConstraint().width * 0.8,
+                  child: GridView.builder(
+                      shrinkWrap: true,
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount:  context.screenConstraint().width > 1000 ?2 :1,
+                          childAspectRatio: 
+                          context.screenConstraint().width > 1200  ? 4 : 
+                          context.screenConstraint().width > 900 ? 3:
+                          context.screenConstraint().width > 650 ? 4:
+                           context.screenConstraint().width > 520 ? 3:
+                           context.screenConstraint().width > 410 ? 1: 1,
+                          
+                      ),
+                      itemCount: projectList.length,
+                      itemBuilder: (context,index){
+                        return ProjectScreen(projectdata: projectList[index]);
+                      },
+                  ),
+              ),
+              ),
+             const  SocialsButtons()
           ],
         ),
       ),

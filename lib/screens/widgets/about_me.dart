@@ -13,126 +13,6 @@ class AboutMe extends StatelessWidget {
         width: context.screenConstraint().width * 0.8,
         child: context.screenConstraint().width > 400
             ?
-            //  child: Column(
-            //   children: [
-            //      Column(
-            //         crossAxisAlignment: CrossAxisAlignment.start,
-            //         children: [
-            //           Text(
-            //             'About Me',
-            //             style: kSectionTitleText,
-            //           ),
-            //           const SizedBox(
-            //             height: 10,
-            //           ),
-            //           Text(
-            //             aboutMe,
-            //             style: kSubTitleText,
-            //           ),
-            //           const SizedBox(
-            //             height: 15,
-            //           ),
-            //           const Divider(),
-            //           const SizedBox(
-            //             height: 10,
-            //           ),
-            //           Text(
-            //             'Experience',
-            //             style: kSectionTitleText,
-            //           ),
-            //           const SizedBox(
-            //             height: 10,
-            //           ),
-            //           Text(
-            //             experience,
-            //             style: kSubTitleText,
-            //           ),
-            //         ],
-            //       ),
-
-            //     SizedBox(height: 10,),
-            //       Card(
-            //         child: Padding(
-            //           padding:
-            //               const EdgeInsets.symmetric(vertical: 30, horizontal: 40),
-            //           child: Column(
-            //             crossAxisAlignment: CrossAxisAlignment.start,
-            //             children: [
-            //               Text(
-            //                 'Location',
-            //                 style: kSubTitleText,
-            //               ),
-            //               const SizedBox(
-            //                 height: 5,
-            //               ),
-            //               Row(
-            //                 children: [
-            //                   Icon(
-            //                     Icons.location_pin,
-            //                     color: kPrimaryColor,
-            //                     size: 15,
-            //                   ),
-            //                   Text(location),
-            //                 ],
-            //               ),
-            //               const SizedBox(
-            //                 height: 20,
-            //               ),
-            //               Text(
-            //                 'E-mail',
-            //                 style: kSubTitleText,
-            //               ),
-            //               const SizedBox(
-            //                 height: 5,
-            //               ),
-            //               Row(
-            //                 children: [
-            //                   Icon(
-            //                     Icons.mail,
-            //                     color: kPrimaryColor,
-            //                     size: 15,
-            //                   ),
-            //                   Flexible(child:
-            //                   Text(email)),
-            //                   const SizedBox(
-            //                     height: 10,
-            //                   ),
-            //                 ],
-            //               ),
-            //               const SizedBox(
-            //                 height: 20,
-            //               ),
-            //               Text(
-            //                 'Ph.no',
-            //                 style: kSubTitleText,
-            //               ),
-            //               const SizedBox(
-            //                 height: 5,
-            //               ),
-            //               Row(
-            //                 children: [
-            //                   Icon(
-            //                     Icons.phone,
-            //                     color: kPrimaryColor,
-            //                     size: 15,
-            //                   ),
-            //                   Text(phno),
-            //                   const SizedBox(
-            //                     height: 10,
-            //                   ),
-            //                 ],
-            //               ),
-            //               const SizedBox(
-            //                 height: 20,
-            //               ),
-
-            //             ],
-            //           ),
-            //         ),
-            //       ),
-
-            //   ],
-            // ));
             Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -314,9 +194,7 @@ class AboutMe extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
-                    height: 10,
-                  ),
+                 const  SizedBox(height: 10,),
                   Card(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
